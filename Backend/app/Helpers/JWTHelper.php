@@ -22,7 +22,7 @@ class JWTHelper
             env('APP_DEBUG') ? false : true,
             true,
             false,
-            'None'
+            env('APP_DEBUG') ? 'None' : 'Strict'
         );
     }
 
